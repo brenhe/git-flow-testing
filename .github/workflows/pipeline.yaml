@@ -1,0 +1,18 @@
+name: Mapping Upload
+
+on:
+  workflow_dispatch:
+
+jobs:
+  mapping-test:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Testing Step
+        run: 
+          echo "Testando echo na pipeline"
+        shell: bash
